@@ -4,41 +4,58 @@
 
 export const WHATSAPP_POOLS = {
   TESTE: [
-    "5519983880841", // Número 1
-    "5519988582346", // Número 2
-    "5519988932787", // Número 3
-    "5518981550717", // Número 4
-    "5519988741698", // Número 5
-    "5519987508959", // Número 6
-    "5519988792084", // Número 7
-    "5521979358021", // Número 8
-    "5519987741165", // Número 9
-    "5582956357635", // Número 10
+    "5519983880841", // ADS 0841
+    "5511953738283", // ADS 8283
+    "5554920031494", // ADS 1494
+    "5518981550717", // ADS 0717
+    "5519988741698", // ADS 1698
+    "5519987508959", // ADS 8959
+    "5519988792084", // ADS 2084
+    "5521979358021", // ADS 8021
   ],
   COMPRA: [
-    "5519983880841", // Número 1
-    "5519988582346", // Número 2
-    "5519988932787", // Número 3
-    "5518981550717", // Número 4
-    "5519988741698", // Número 5
-    "5519987508959", // Número 6
-    "5519988792084", // Número 7
-    "5521979358021", // Número 8
-    "5519987741165", // Número 9
-    "5582956357635", // Número 10
+    "5519983880841", // ADS 0841
+    "5511953738283", // ADS 8283
+    "5554920031494", // ADS 1494
+    "5518981550717", // ADS 0717
+    "5519988741698", // ADS 1698
+    "5519987508959", // ADS 8959
+    "5519988792084", // ADS 2084
+    "5521979358021", // ADS 8021
   ],
   COMPLETO: [
-    "5519983880841", // Número 1
-    "5519988582346", // Número 2
-    "5519988932787", // Número 3
-    "5518981550717", // Número 4
-    "5519988741698", // Número 5
-    "5519987508959", // Número 6
-    "5519988792084", // Número 7
-    "5521979358021", // Número 8
-    "5519987741165", // Número 9
-    "5582956357635", // Número 10
+    "5519983880841", // ADS 0841
+    "5511953738283", // ADS 8283
+    "5554920031494", // ADS 1494
+    "5518981550717", // ADS 0717
+    "5519988741698", // ADS 1698
+    "5519987508959", // ADS 8959
+    "5519988792084", // ADS 2084
+    "5521979358021", // ADS 8021
   ]
+};
+
+/**
+ * Modal de pré-atendimento exibido ao clicar em qualquer botão de WhatsApp.
+ * - ativo: false => nenhum modal; os botões funcionam como antes.
+ * - modelo: 1 => nome + telefone | 2 => somente telefone (no modelo 2, nomeObrigatorio não tem efeito).
+ * - nomeObrigatorio / telefoneObrigatorio: true = obrigatório | false = opcional.
+ * O nome nunca sai do navegador. O telefone só é enviado ao GestAuto quando preenchido e válido.
+ */
+export const WHATSAPP_MODAL_CONFIG = {
+  ativo: true,
+  modelo: 1 as 1 | 2,
+  nomeObrigatorio: false,
+  telefoneObrigatorio: true,
+  titulo: "Vamos começar seu atendimento?",
+  subtitulo: "Preencha os dados abaixo para continuar.",
+  rotuloNome: "Seu nome",
+  placeholderNome: "Digite seu nome",
+  rotuloTelefone: "Seu WhatsApp",
+  placeholderTelefone: "(DDD) 99999-9999",
+  textoBotao: "Falar No Whatsapp - Gerar Teste",
+  textoContinuarSemPreencher: "Continuar sem preencher",
+  textoFinalidade: "Usamos seu WhatsApp somente para identificar e agilizar o seu atendimento.",
 };
 
 export const SITE_CONFIG = {
